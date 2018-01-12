@@ -67,7 +67,7 @@ public class Utils {
         String line = null;
         try {
             while ((line = reader.readLine()) != null) {
-                sb.append(line );
+                sb.append(line);
             }
         } catch (IOException e) {
             e.printStackTrace();

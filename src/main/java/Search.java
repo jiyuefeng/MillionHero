@@ -41,7 +41,7 @@ public class Search implements Callable {
     }
 
     public static void main(String[] args) throws Exception {
-        Search search = new Search("阿尔茨海默症又被称为什么?");
+        Search search = new Search("“读书破万卷“的下一句是什么?");
         System.out.println(search.call());
     }
 

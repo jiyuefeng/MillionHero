@@ -3,7 +3,6 @@ import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 import net.sourceforge.tess4j.util.LoadLibs;
 
-import java.awt.*;
 import java.io.File;
 
 /**
@@ -18,9 +17,10 @@ public class TessOCR {
         //Set the tessdata path
         instance.setDatapath(tessDataFolder.getAbsolutePath());
         try {
-            Rectangle rectangle = new Rectangle(100, 300, 900, 900);
+            /*Rectangle rectangle = new Rectangle(100, 300, 900, 900);
             return instance.doOCR(imageFile,rectangle)
-                    .replace(" ",".").replace(",","");
+                    .replace(" ",".").replace(",","");*/
+            return instance.doOCR(imageFile).replace(" ",".").replace(",","");
         } catch (TesseractException e) {
             System.err.println("提取文字失败："+e.getMessage());
         }
@@ -28,7 +28,7 @@ public class TessOCR {
     }
 
     public static void main(String[] args) {
-        File imageFile=new File("D:\\23910392848779368.png");
+        File imageFile=new File("C:\\Users\\xiepeilong\\hero\\69s9f8.png");
         TessOCR tessOCR=new TessOCR();
         System.out.println(tessOCR.getOCR(imageFile));
     }

@@ -1,11 +1,10 @@
 package entity.cddh;
 
-import java.util.Map;
-
 /**
  * Created by Doodlister on 2018/1/11.
+ *
  * @author Doodlister
- * 冲顶大会 问题实体
+ *         冲顶大会 问题实体
  */
 public class CDEntity {
     private int code;

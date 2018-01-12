@@ -1,7 +1,7 @@
 package entity.cddh;
 
 public class Data {
-    private  Event event;
+    private Event event;
 
     public Data(Event event) {
         this.event = event;
