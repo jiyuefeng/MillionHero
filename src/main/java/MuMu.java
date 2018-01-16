@@ -31,7 +31,7 @@ public class MuMu {
 
         //Rectangle screenRectangle = new Rectangle(screenSize);
 
-        Rectangle screenRectangle = new Rectangle(30, 150, 475, 450);
+        Rectangle screenRectangle = new Rectangle(30, 150, 500, 400);
 
         Robot robot = new Robot();
         BufferedImage image = robot.createScreenCapture(screenRectangle);
